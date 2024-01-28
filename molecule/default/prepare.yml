@@ -1,0 +1,9 @@
+---
+- name: Prepare instance.
+  hosts: all
+  tasks:
+
+    - name: Unmount /etc/resolv.conf so that it can be modified.
+      ansible.posix.mount:
+        path: /etc/resolv.conf
+        state: unmounted

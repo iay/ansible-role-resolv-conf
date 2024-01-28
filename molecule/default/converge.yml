@@ -1,0 +1,11 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: iay.resolv_conf
+      resolv_conf_search:
+        - foo.bar
+      resolv_conf_nameservers:
+        - '8.8.8.8'
+        - '8.8.4.4'

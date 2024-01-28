@@ -1,0 +1,11 @@
+---
+- name: Validate.
+  hosts: all
+  tasks:
+    - name: Check for values.
+      ansible.builtin.command: grep -q '{{ item }}' /etc/resolv.conf
+      changed_when: false
+      with_items:
+        - search foo.bar
+        - nameserver 8.8.8.8
+        - nameserver 8.8.4.4
