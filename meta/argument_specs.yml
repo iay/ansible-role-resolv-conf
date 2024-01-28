@@ -1,0 +1,12 @@
+---
+argument_specs:
+  main:
+    options:
+      resolv_conf_search:
+        type: list
+        elements: str
+        required: false
+      resolv_conf_nameservers:
+        type: list
+        elements: str
+        required: false

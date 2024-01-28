@@ -1,0 +1,20 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: iay
+  namespace: iay
+  role_name: resolv_conf
+  description: Simple configuration of /etc/resolv.conf
+  company: Ian A. Young
+  license: Apache-2.0
+  min_ansible_version: '2.16'
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm    # 12
+        - bullseye    # 11
+        - buster      # 10
+  galaxy_tags:
+    - system
+    - dns
